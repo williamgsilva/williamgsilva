@@ -1,7 +1,7 @@
-<h1 align="center">Hi, my name is William!</h1>
+<h1 align="center">Olá, meu nome é William!</h1>
 
 <p align="center">
-  <b>DevOps / SRE:</b> Automation, IaC, Python, Orchestration, CI/CD
+  <b>DevOps / SRE:</b> Automações, IaC, Python, orquestração, CI/CD
 </p>
 
 <p align="center">
@@ -10,26 +10,26 @@
 </p>
 
 <p align="center">
-  🇺🇸 English · 🇧🇷 <a href="README.pt-BR.md">Português</a>
+  🇺🇸 <a href="README.md">English</a> · 🇧🇷 Português
 </p>
 
 ---
 
-## 🚀 About me
+## 🚀 Sobre mim
 
-I'm an infrastructure engineer focused on maintaining critical, scalable environments, observability, and automation.
+Sou engenheiro de infraestrutura com foco em sustentação de ambientes críticos e escaláveis, observabilidade e automações.
 
-Day to day, I:
+No dia a dia eu:
 
-- 💻 Provision and maintain **critical, scalable environments**
-- ⚙️ Automate server provisioning and configuration with **Ansible**
-- 🐍 Develop **internal Python tools** for infrastructure operations (CLIs, APIs, and automation)
-- 🐳 Package and run applications in **Docker** and orchestrate services with **Rancher and Docker Swarm**
-- 🔁 Build and maintain **CI/CD pipelines** (GitLab CI / GitHub Actions)
-- 🍃 Handle **backup, restore, and database administration** routines (MongoDB, SQL)
-- ☕ Support **Java / Spring Boot** applications in production (gateways and microservices)
+- 💻 Provisiono e mantenho **ambientes críticos e escaláveis**
+- ⚙️ Automatizo provisionamento e configuração de servidores com **Ansible**
+- 🐍 Desenvolvo **ferramentas internas em Python** para operação de infraestrutura (CLIs, APIs e automações)
+- 🐳 Empacoto e opero aplicações em **Docker** e orquestro serviços com **Rancher e Docker Swarm**
+- 🔁 Construo e mantenho **pipelines de CI/CD** (GitLab CI / GitHub Actions)
+- 🍃 Cuido de rotinas de **backup, restore e gestão de bancos** (MongoDB, SQL)
+- ☕ Dou suporte a aplicações **Java / Spring Boot** em produção (gateways e microsserviços)
 
-> 💡 I believe good infrastructure never stands still — and is never good enough to stop improving.
+> 💡 Acredito que boa infraestrutura é aquela que não para no tempo e nunca se considera boa o suficiente para deixar de melhorar.
 
 ## 🛠️ Stack
 
@@ -45,7 +45,7 @@ Day to day, I:
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-**Languages & Data**
+**Linguagens & Dados**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
@@ -53,40 +53,40 @@ Day to day, I:
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
-**Tools**
+**Ferramentas**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Redmine](https://img.shields.io/badge/Redmine-B32024?style=flat-square&logo=redmine&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
-**AI enthusiast**
+**Entusiasta de IA**
 
 ![Claude](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
 
-## 📌 Featured projects
+## 📌 Projetos em destaque
 
-| Project                                                                   | Description                                                                                                                                                       | Stack                              |
-| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [**project-template**](https://github.com/williamgsilva/project-template) | Base template for new projects: standardized structure, `make` as a single interface, CI, security scanning (secrets, dependencies, IaC), ADRs, and AI instructions. | Make · GitHub Actions · pre-commit |
+| Projeto                                                                   | Descrição                                                                                                                                                                   | Stack                              |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [**project-template**](https://github.com/williamgsilva/project-template) | Template base para novos projetos: estrutura padronizada, `make` como interface única, CI, varredura de segurança (segredos, dependências, IaC), ADRs e instruções para IA. | Make · GitHub Actions · pre-commit |
 
-<!-- Add new projects here as they are published -->
+<!-- Adicione novos projetos aqui conforme publicar -->
 
-## 📈 Learning roadmap
+## 📈 Roadmap de estudos
 
-I track my progress publicly — each item becomes a repository with a hands-on lab.
+Acompanho meu progresso publicamente — cada item vira um repositório com laboratório prático.
 
-- [x] Linux, Bash, and networking
-- [x] Docker and Docker Compose
-- [x] Ansible for server configuration
-- [x] CI/CD with GitLab CI
-- [x] Infrastructure automation with Python
-- [x] Observability: Prometheus, Grafana and Loki
+- [x] Linux, Bash e redes
+- [x] Docker e Docker Compose
+- [x] Ansible para configuração de servidores
+- [x] CI/CD com GitLab CI
+- [x] Automação de infraestrutura com Python
+- [x] Observabilidade: Prometheus, Grafana e Loki
 - [ ] Kubernetes (CKA)
-- [ ] Terraform / Infrastructure as Code
+- [ ] Terraform / Infraestrutura como Código
 - [ ] Cloud (AWS)
-- [ ] GitOps with Argo CD
+- [ ] GitOps com Argo CD
 
-## 📊 Stats
+## 📊 Estatísticas
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=williamgsilva&show_icons=true&hide_border=true&count_private=true&theme=transparent" alt="GitHub stats" />
@@ -96,5 +96,5 @@ I track my progress publicly — each item becomes a repository with a hands-on 
 ---
 
 <p align="center">
-  <i>Open to opportunities in DevOps, SRE, and Cloud. Let's talk!</i>
+  <i>Aberto a oportunidades em DevOps, SRE e Cloud. Vamos conversar!</i>
 </p>
