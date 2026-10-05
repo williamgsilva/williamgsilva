@@ -4,6 +4,11 @@
   <b>DevOps / SRE</b> · Automação de infraestrutura · Python · Containers · CI/CD
 </p>
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/william-gon%C3%A7alves-a315961ba/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:williamgs95@hotmail.com"><img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=maildotru&logoColor=white" alt="E-mail"></a>
+</p>
+
 ---
 
 ## 🚀 Sobre mim
