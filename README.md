@@ -13,6 +13,10 @@
   🇺🇸 English · 🇧🇷 <a href="README.pt-BR.md">Português</a>
 </p>
 
+<p align="center">
+  🔨 <b>Latest project:</b> <a href="https://github.com/williamgsilva/active-directory-api">active-directory-api</a> — one place for every internal app to authenticate against Active Directory
+</p>
+
 ---
 
 ## 🚀 About me
@@ -29,7 +33,45 @@ Day to day, I:
 - 🍃 Handle **backup, restore, and database administration** routines (MongoDB, SQL)
 - ☕ Support **Java / Spring Boot** applications in production (gateways and microservices)
 
+What I enjoy most is spotting the same problem being solved over and over and turning it into a tool —
+a CLI, an API, a pipeline — with the decisions behind it written down, so the next person doesn't have to
+rediscover them.
+
 > 💡 I believe good infrastructure never stands still — and is never good enough to stop improving.
+
+## 📌 Featured projects
+
+### 🔐 [active-directory-api](https://github.com/williamgsilva/active-directory-api)
+
+Every new internal application was re-implementing its own login against Active Directory: same LDAP
+code, same bugs, one more place holding a service-account password. I built a small API to be **the only
+thing that talks to AD** — apps send credentials once and get back a signed JWT they can validate on their own.
+
+- Login by username **or email**, RS256 JWTs with a public JWKS endpoint
+- Per-application rules: access level, required groups, which groups go into the token
+- Zero-downtime signing-key rotation, apps and keys in PostgreSQL, changes applied without restarts
+- Fixes I made on purpose: LDAP injection, empty-password binds, a connection shared across users
+- 49 automated tests in CI, Docker Swarm deploy with rolling updates
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LDAP](https://img.shields.io/badge/LDAP%20%2F%20Active%20Directory-0078D4?style=flat-square)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker_Swarm-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+### 🧱 [project-template](https://github.com/williamgsilva/project-template)
+
+The starting point I use for new projects, so every repository begins with the same foundations instead
+of copying them by hand: a standardized structure, `make` as the single interface, CI, security scanning
+(secrets, dependencies, IaC), ADRs to record decisions, and instructions for AI assistants.
+
+![Make](https://img.shields.io/badge/Make-6D00CC?style=flat-square&logo=gnu&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![pre-commit](https://img.shields.io/badge/pre--commit-FAB040?style=flat-square&logo=precommit&logoColor=black)
+
+<!-- Add new projects here as they are published -->
 
 ## 🛠️ Stack
 
@@ -48,10 +90,11 @@ Day to day, I:
 **Languages & Data**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
 **Tools**
 
@@ -63,14 +106,6 @@ Day to day, I:
 
 ![Claude](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
 
-## 📌 Featured projects
-
-| Project                                                                   | Description                                                                                                                                                       | Stack                              |
-| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [**project-template**](https://github.com/williamgsilva/project-template) | Base template for new projects: standardized structure, `make` as a single interface, CI, security scanning (secrets, dependencies, IaC), ADRs, and AI instructions. | Make · GitHub Actions · pre-commit |
-
-<!-- Add new projects here as they are published -->
-
 ## 📈 Learning roadmap
 
 I track my progress publicly — each item becomes a repository with a hands-on lab.
@@ -81,6 +116,8 @@ I track my progress publicly — each item becomes a repository with a hands-on 
 - [x] CI/CD with GitLab CI
 - [x] Infrastructure automation with Python
 - [x] Observability: Prometheus, Grafana and Loki
+- [x] Centralized authentication: Active Directory, LDAP and JWT
+- [ ] SSO with Keycloak / OpenID Connect
 - [ ] Kubernetes (CKA)
 - [ ] Terraform / Infrastructure as Code
 - [ ] Cloud (AWS)
