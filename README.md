@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  🔨 <b>Latest project:</b> <a href="https://github.com/williamgsilva/active-directory-api">active-directory-api</a> — one place for every internal app to authenticate against Active Directory
+  🔨 <b>Latest project:</b> <a href="https://github.com/williamgsilva/active-directory-api">active-directory-api</a>: one place for every internal app to authenticate against Active Directory
 </p>
 
 ---
@@ -33,11 +33,11 @@ Day to day, I:
 - 🍃 Handle **backup, restore, and database administration** routines (MongoDB, SQL)
 - ☕ Support **Java / Spring Boot** applications in production (gateways and microservices)
 
-What I enjoy most is spotting the same problem being solved over and over and turning it into a tool —
-a CLI, an API, a pipeline — with the decisions behind it written down, so the next person doesn't have to
-rediscover them.
+What I enjoy most is spotting the same problem being solved over and over and turning it into a tool,
+whether that's a CLI, an API or a pipeline, with the decisions behind it written down so the next person
+doesn't have to rediscover them.
 
-> 💡 I believe good infrastructure never stands still — and is never good enough to stop improving.
+> 💡 I believe good infrastructure never stands still and is never good enough to stop improving.
 
 ## 📌 Featured projects
 
@@ -45,7 +45,7 @@ rediscover them.
 
 Every new internal application was re-implementing its own login against Active Directory: same LDAP
 code, same bugs, one more place holding a service-account password. I built a small API to be **the only
-thing that talks to AD** — apps send credentials once and get back a signed JWT they can validate on their own.
+thing that talks to AD**. Apps send the credentials and get back a signed JWT they can validate on their own.
 
 - Login by username **or email**, RS256 JWTs with a public JWKS endpoint
 - Per-application rules: access level, required groups, which groups go into the token
@@ -108,7 +108,7 @@ of copying them by hand: a standardized structure, `make` as the single interfac
 
 ## 📈 Learning roadmap
 
-I track my progress publicly — each item becomes a repository with a hands-on lab.
+I track my progress publicly, and each item becomes a repository with a hands-on lab.
 
 - [x] Linux, Bash, and networking
 - [x] Docker and Docker Compose

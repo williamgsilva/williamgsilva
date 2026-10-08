@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  🔨 <b>Projeto mais recente:</b> <a href="https://github.com/williamgsilva/active-directory-api">active-directory-api</a> — um só lugar para todas as aplicações internas autenticarem no Active Directory
+  🔨 <b>Projeto mais recente:</b> <a href="https://github.com/williamgsilva/active-directory-api">active-directory-api</a>: um só lugar para todas as aplicações internas autenticarem no Active Directory
 </p>
 
 ---
@@ -33,9 +33,9 @@ No dia a dia eu:
 - 🍃 Cuido de rotinas de **backup, restore e gestão de bancos** (MongoDB, SQL)
 - ☕ Dou suporte a aplicações **Java / Spring Boot** em produção (gateways e microsserviços)
 
-O que mais gosto é perceber um problema sendo resolvido de novo e de novo e transformá-lo em ferramenta —
-uma CLI, uma API, um pipeline — com as decisões por trás documentadas, para a próxima pessoa não precisar
-redescobri-las.
+O que mais gosto é perceber um problema sendo resolvido de novo e de novo e transformá-lo em ferramenta,
+seja uma CLI, uma API ou um pipeline, com as decisões por trás documentadas para a próxima pessoa não
+precisar redescobri-las.
 
 > 💡 Acredito que boa infraestrutura é aquela que não para no tempo e nunca se considera boa o suficiente para deixar de melhorar.
 
@@ -45,7 +45,7 @@ redescobri-las.
 
 Cada nova aplicação interna reimplementava o próprio login no Active Directory: o mesmo código LDAP, os
 mesmos bugs e mais um lugar guardando senha de conta de serviço. Criei uma API pequena para ser **a única
-coisa que fala com o AD** — as aplicações mandam as credenciais e recebem um JWT assinado, que elas mesmas
+coisa que fala com o AD**. As aplicações mandam as credenciais e recebem um JWT assinado, que elas mesmas
 conseguem validar.
 
 - Login por usuário **ou e-mail**, JWT RS256 com endpoint JWKS público
@@ -109,7 +109,7 @@ dependências, IaC), ADRs para registrar decisões e instruções para assistent
 
 ## 📈 Roadmap de estudos
 
-Acompanho meu progresso publicamente — cada item vira um repositório com laboratório prático.
+Acompanho meu progresso publicamente, e cada item vira um repositório com laboratório prático.
 
 - [x] Linux, Bash e redes
 - [x] Docker e Docker Compose
