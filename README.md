@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/william-gon%C3%A7alves-a315961ba/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/william-goncalves-sre/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:williamgs95@hotmail.com"><img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=maildotru&logoColor=white" alt="E-mail"></a>
 </p>
 
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  🔨 <b>Latest project:</b> <a href="https://github.com/williamgsilva/active-directory-api">active-directory-api</a>: one place for every internal app to authenticate against Active Directory
+  🔨 <b>Latest project:</b> <a href="https://github.com/williamgsilva/tse-api">tse-api</a>: API and web dashboard for Brazil's public election data
 </p>
 
 ---
@@ -27,7 +27,7 @@ Day to day, I:
 
 - 💻 Provision and maintain **critical, scalable environments**
 - ⚙️ Automate server provisioning and configuration with **Ansible**
-- 🐍 Develop **internal Python tools** for infrastructure operations (CLIs, APIs, and automation)
+- 🐍 Write **Python** automation for infrastructure tasks (AI-assisted, learning in public)
 - 🐳 Package and run applications in **Docker** and orchestrate services with **Rancher and Docker Swarm**
 - 🔁 Build and maintain **CI/CD pipelines** (GitLab CI / GitHub Actions)
 - 🍃 Handle **backup, restore, and database administration** routines (MongoDB, SQL)
@@ -41,24 +41,20 @@ doesn't have to rediscover them.
 
 ## 📌 Featured projects
 
-### 🔐 [active-directory-api](https://github.com/williamgsilva/active-directory-api)
+### 🗳️ [tse-api](https://github.com/williamgsilva/tse-api)
 
-Every new internal application was re-implementing its own login against Active Directory: same LDAP
-code, same bugs, one more place holding a service-account password. I built a small API to be **the only
-thing that talks to AD**. Apps send the credentials and get back a signed JWT they can validate on their own.
+An independent API and web dashboard for Brazil's public election data, built only from official open
+sources (TSE open data and IBGE maps).
 
-- Login by username **or email**, RS256 JWTs with a public JWKS endpoint
-- Per-application rules: access level, required groups, which groups go into the token
-- Zero-downtime signing-key rotation, apps and keys in PostgreSQL, changes applied without restarts
-- Fixes I made on purpose: LDAP injection, empty-password binds, a connection shared across users
-- 49 automated tests in CI, Docker Swarm deploy with rolling updates
+- Map of Brazil by state, region and city, down to each polling station
+- Results for any office, nationwide or per state and city
+- Decodes the original binary ballot-box report (BU) of any polling station
+- Local database for nationwide aggregates: turnout, abstention, biometrics, votes per hour
+- CI and security scanning on every push, `make` as the single interface
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![LDAP](https://img.shields.io/badge/LDAP%20%2F%20Active%20Directory-0078D4?style=flat-square)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker_Swarm-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ### 🧱 [project-template](https://github.com/williamgsilva/project-template)
@@ -80,7 +76,6 @@ of copying them by hand: a standardized structure, `make` as the single interfac
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Rancher](https://img.shields.io/badge/Rancher-0075A8?style=flat-square&logo=rancher&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
 ![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
@@ -108,7 +103,7 @@ of copying them by hand: a standardized structure, `make` as the single interfac
 
 ## 📈 Learning roadmap
 
-I track my progress publicly, and each item becomes a repository with a hands-on lab.
+Checked items are part of my day-to-day work. Each open item becomes a hands-on lab repository.
 
 - [x] Linux, Bash, and networking
 - [x] Docker and Docker Compose
@@ -133,5 +128,5 @@ I track my progress publicly, and each item becomes a repository with a hands-on
 ---
 
 <p align="center">
-  <i>Open to opportunities in DevOps, SRE, and Cloud. Let's talk!</i>
+  <i>Feel free to reach out on LinkedIn.</i>
 </p>
